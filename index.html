@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		*, *:before, *:after {
+			box-sizing: border-box;
+		}
+		@font-face {
+			font-family: YesevaOne;
+			src: url(YesevaOne/YesevaOne-Regular.ttf);
+		}
+		header {
+			background-color: #12645B;
+			margin-bottom: 1em;
+			width: 100%;
+		}
+		#head {
+			overflow: hidden;
+			line-height: 10px;
+		}
+		#head .logo {
+			float: left;
+		}
+		#head nav {
+			float: right;
+
+		}
+		#head li {
+			float: left;
+			list-style-type: none;
+		}
+		#head .logo {
+			margin: 0;
+			float: left;
+			height: 60px;
+			width:40px;
+		}
+		#head ul {
+			margin-top: 10%;
+			padding: 0;
+		}
+		#head a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #FFFFFF;
+			text-decoration: none;
+		}	
+		.container {
+			width: 100%;
+			height: 260px;
+			object-fit: cover;
+			background-image: url(spice-source/assets/images/hero.jpg);
+			overflow: hidden;
+		}
+		h1 {
+			position: absolute;
+			top: 165px;
+			left: 70px;
+		}
+		h1,
+		.local {
+			color: #ffffff;
+			text-shadow: 2px 2px #000000;
+		}
+		.local {
+			position: absolute;
+			top: 230px;
+			left: 70px;
+		}
+		main {
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		.top {
+			width: 50%;
+			float: left;
+			padding: 0;
+		}
+		blockquote i {
+			padding: 8px;
+			margin: 10%;
+			font-size: 20px;
+			color: #91857C;
+		
+		}
+		.cf.section-2:after {
+			display: block;
+			content: '';
+			clear: both;
+		}
+		.clearfix:after {
+			display: block;
+			clear: both;
+			font-size: 0;
+			content: '';
+			height: 0;
+		}
+		.clearfix { display: inline-block; }
+		.clearfix { display: block; }
+
+		.column {
+			float: left;
+			padding: 0 15px;
+			background-color: #ccc;
+		}
+		.span_2 {
+			width: 15%;
+			text-align: left;
+			margin: 0;
+		}
+		.border {
+			border-left: 1px solid rgba(0,0,0,0.1);
+		}
+		#section-2 {
+			width: 40%;
+			float: right;
+			margin-top: 0;
+		}
+		#section-2 li {
+			margin: 10px 0;
+
+		}
+		.cf.section-2:after {
+			display: block;
+			content: '';
+			clear: both;
+		}
+		footer {
+			background-color: #eee;
+			margin-top: 1em;
+			width: 100%;
+			height: 60px;
+		}
+		#foot {
+			line-height: 10px;
+		}
+		#foot small,
+		#foot nav {
+			vertical-align: bottom;
+			display: inline-block;
+			margin-left: 2%;
+		}
+		#foot ul {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			margin-top: 20%;
+		}
+		#foot li {
+			list-style-type: none;
+			display: inline-block;
+		}
+		#foot a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #ccc;
+		}
+		.cf.footer:before {
+			visibility: hidden;
+			display: block;
+			content: '';
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<header id="head">
+		<div class="cf">
+		<img class="logo" src="assets/images/spices.svg">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>	
+		</div>
+		<div class="spicesource">
+		<div>
+			<img class="container" src="assets/images/hero.jpg">
+			<h1>Spice Source</h1>
+			<h2 class="local">Bringing local and imported spices to your doorstep</h2>
+		</div>
+		</div>
+	</header>
+	<main>
+		<section id="section-1" class="top">
+			<h2>Heading 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et <a href="">dolore magna aliqua</a> Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<aside class="pquote">
+				<blockquote>
+					<i>"We supply the best spices for the best prices."</i>
+				</blockquote>
+			</aside>
+		</section>
+		<div class="border">
+		<div class="cf section-2" id="section-2">
+			<h4>Box Title</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<h4>Box Title</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li>
+					<a href="">Lorem</a>
+				</li>
+				<li>
+					<a href="">Ipsum Dolor</a>
+				</li>
+				<li>
+					<a href="">Sit Amet</a>
+				</li>
+				<li>
+					<a href="">Consectetur Adipisicing</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div id="row clearfix">
+			<div class="span_2 column">
+				<h3>Heading 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="span_2 column">
+				<h3>Heading 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="span_2 column">
+				<h3>Heading 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</main>
+	<div class="cf footer">
+	<footer id="foot">
+		<small>&copy; Spice Source 2014-2016</small>
+		<nav>
+			<ul>
+				<li>
+					<a href="">Terms</a>
+				</li>
+				<li>
+					<a href="">Privacy</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+	</div>
+</body>
+</html>

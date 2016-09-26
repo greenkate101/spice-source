@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		@font-face {
+			font-family: YesevaOne;
+			src: url(YesevaOne/YesevaOne-Regular.ttf);
+		}
+		header {
+			background-color: #12645B;
+			margin-bottom: 1em;
+			width: 100%;
+		}
+		#head {
+			overflow: hidden;
+			line-height: 10px;
+		}
+		#head .logo {
+			float: left;
+		}
+		#head nav {
+			float: right;
+
+		}
+		#head li {
+			float: left;
+			list-style-type: none;
+		}
+		#head .logo {
+			margin: 0;
+			float: left;
+			height: 60px;
+			width:40px;
+		}
+		#head ul {
+			margin-top: 10%;
+			padding: 0;
+		}
+		#head a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #FFFFFF;
+			text-decoration: none;
+		}	
+		.container {
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 3%;
+			margin-bottom: 5%;
+		}
+		h1 {
+			width: 60%;
+			margin-top: 3%;
+		}
+		.border {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			width: 80%;
+			margin-left: 10%;
+		}
+		.label {
+		    display: block; 
+		}
+		#first {
+			float: left;
+			width: 40%;
+			margin-top: 2%;
+		}
+		#last {
+			float: right;
+			margin-top: 2%;
+		}
+		.clear:after {
+			display: block;
+			content: '';
+			clear: both;
+		}
+		#email {
+			margin-top: 2%;
+			margin-bottom: 0;
+			float: left;
+			width: 40%;
+		}
+		.send {
+			margin-top: 0;
+			width: 100%;
+			height: 100px;
+		}
+		#message {
+			float: left;
+			width: 100%;
+			margin-top: 0;
+		}
+		.checkbox {
+			float: right;
+		}
+		#offers {
+			float: left;	
+			padding: 10px;
+		}
+		.cf:before {
+			visibility: hidden;
+			display: block;
+			content: '';
+			clear: both;
+		}
+		.submit {
+			float: left;
+			margin-right: 60%;
+		}
+		footer {
+			background-color: #eee;
+			margin-top: 1em;
+			width: 100%;
+			height: 60px;
+		}
+		#foot {
+			line-height: 10px;
+		}
+		#foot small,
+		#foot nav {
+			vertical-align: bottom;
+			display: inline-block;
+		}
+		#foot ul {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			margin-top: 20%;
+		}
+		#foot li {
+			list-style-type: none;
+			display: inline-block;
+		}
+		#foot a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #ccc;
+		}
+		.cf.footer:before {
+			visibility: hidden;
+			display: block;
+			content: '';
+			clear: both;
+		}
+		
+	</style>
+</head>
+<body>
+	<header id="head">
+		<div class="cf">
+		<img class="logo" src="assets/images/spices.svg">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>	
+		</div>
+	</header>
+	<div class="border">
+		<h1>Spice Source</h1>
+	</div>
+	<main class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<form>
+			<div class="clear">
+			<div id="first">
+				<label class="label" for="first">First Name</label>
+				<input type="text" name="first" id="first">
+			</div>
+			<div id="last">
+				<label class="label" for="last">Last Name</label>
+				<input type="text" name="last" id="last">
+			</div>
+			</div>
+			<div id="email" class="clear" >
+				<label class="label" for="email">Email</label>
+				<input type="text" name="email" id="email">
+			</div>
+			<div id="message">
+				<p>Send us a message:</p>
+				<textarea class="send"></textarea>
+			</div>
+			<div id="offers">
+				<label for="offers">Contact me about special offers.</label>
+				<input class="checkbox" type="checkbox" name="offers" value="offers" id="offers">
+			</div>
+			<div id="submit" class="cf">
+				<input type="submit" name="submit">
+			</div>
+		</form>	
+	</main>
+	<div class="cf footer">
+	<footer id="foot">
+		<small>&copy; Spice Source 2014-2016</small>
+		<nav>
+			<ul>
+				<li>
+					<a href="">Terms</a>
+				</li>
+				<li>
+					<a href="">Privacy</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+	</div>
+	</body>
+	</html>

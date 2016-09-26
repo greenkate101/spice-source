@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		@font-face {
+			font-family: YesevaOne;
+			src: url(YesevaOne/YesevaOne-Regular.ttf);
+		}
+		header {
+			background-color: #12645B;
+			margin-bottom: 1em;
+			width: 100%;
+		}
+		#head {
+			overflow: hidden;
+			line-height: 10px;
+		}
+		#head .logo {
+			float: left;
+		}
+		#head nav {
+			float: right;
+
+		}
+		#head li {
+			float: left;
+			list-style-type: none;
+		}
+		#head .logo {
+			margin: 0;
+			float: left;
+			height: 60px;
+			width:40px;
+		}
+		#head ul {
+			margin-top: 10%;
+			padding: 0;
+		}
+		#head a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #FFFFFF;
+			text-decoration: none;
+		}	
+		.container {
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 3%;
+			margin-bottom: 5%;
+		}
+		h1 {
+			width: 60%;
+			margin-top: 3%;
+		}
+		.border {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			width: 80%;
+			margin-left: 10%;
+		}
+		.shop-bar {
+			background-color: #eee;
+			height: 40px;
+			width: 100%;
+			padding: 10px;
+		}
+		.shop {
+			margin: 0;
+		}
+		.shop,
+		.left-side {
+			vertical-align: top;
+			display: inline-block;
+		}
+		.left-side{
+			float: right;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		.shop-bar,
+		.cart {
+			margin: 0;
+			height: 20px;	
+		}
+		.cart {
+			float: left;
+		}
+		#row div {
+			width: 18%;
+			border: 10px solid rgba(0,0,0,0.1);
+			border-bottom-width: 40px;
+			float: left;
+			margin: 4%;
+			padding: 20px;
+		}
+		#row img {
+			display: block;
+			margin: auto;
+			height: 150px;	
+		}
+		.fixed {
+			height: 140px;
+		}
+		#price {
+			float: left;
+			display: inline-block;
+		}
+		#add{
+			display: inline-block;
+			padding: 0 15px;
+		}
+		.clear {
+			clear: both;	
+		}		
+		footer {
+			background-color: #eee;
+			margin-top: 1em;
+			width: 100%;
+			height: 60px;
+		}
+		#foot {
+			line-height: 10px;
+		}
+		#foot small,
+		#foot nav {
+			vertical-align: bottom;
+			display: inline-block;
+			margin-left: 2%;
+		}
+		#foot ul {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			margin-top: 20%;
+		}
+		#foot li {
+			list-style-type: none;
+			display: inline-block;
+		}
+		#foot a {
+			display: inline-block;
+			padding: 0 6px;
+			color: #ccc;
+		}
+		.cf.footer:before {
+			visibility: hidden;
+			display: block;
+			content: '';
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<header id="head">
+		<div class="cf">
+		<img class="logo" src="assets/images/spices.svg">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>	
+		</div>
+	</header>
+	<div class="border">
+		<h1>Spice Source</h1>
+	</div>
+	<main class="container">
+		<div class="shop-bar">
+			<div class="shop">Shop</div>
+			<div class="left-side">
+				<img class="cart" src="assets/images/cart.svg">
+				<a class="items" href="">0 item(s) in your cart</a>
+			</div>
+		</div>
+		<div id="row">
+			<div class="fixed">
+				<img src="assets/images/shop-item.jpg">
+				<p id="price">Spice $1.50<a id="add" href=""> Add to cart</a></p>
+			</div>
+			<div class="fixed">
+				<img src="assets/images/shop-item.jpg">
+				<p id="price">Spice $1.50<a id="add" href=""> Add to cart</a></p>
+			</div>
+			<div class="fixed"> 
+				<img src="assets/images/shop-item.jpg"> 
+				<p id="price">Spice $1.50<a id="add" href="">Add to cart</a></p>
+			</div>
+			<div class="fixed"> 
+				<img src="assets/images/shop-item.jpg"> 
+				<p id="price">Spice $1.50<a id="add" href="">Add to cart</a></p>
+			</div>
+			<div class="fixed"> 
+				<img src="assets/images/shop-item.jpg"> 
+				<p id="price">Spice $1.50<a id="add" href="">Add to cart</a></p>
+			</div>
+		</div>
+	</main>
+	<div class="cf footer">
+	<footer id="foot">
+		<small>&copy; Spice Source 2014-2016</small>
+		<nav>
+			<ul>
+				<li>
+					<a href="">Terms</a>
+				</li>
+				<li>
+					<a href="">Privacy</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+	</div>
+</body>
+</html>
