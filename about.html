@@ -60,9 +60,10 @@
 		}
 		.image {
 			float:right;
-			height: 260px;
+			height: 250px;
 			margin: 4%;
 			border-left: 1px solid rgba(0,0,0,0.1);
+			display: block;	
 		}
 		#text .paragraph {
 			font-size: 18px;
@@ -111,8 +112,32 @@
 				margin: auto;
 			}
 		}
-		@media screen and (max-width: 400px) {
+		@media screen and (max-width: 500px) {
 			.image {
+				margin: auto;
+			}
+			#head {
+			overflow: hidden;
+			line-height: 30px;
+			}
+			#head ul {
+				vertical-align: middle;
+      			list-style-type: none;
+      			text-align: center;
+      			margin: 0;
+			}
+			#head li {
+				float: none;
+				margin: 2%;
+			}
+			#head a {
+				margin: 5%;
+			}
+			#head .logo {
+				float: none;
+			}
+			.image {
+				border-left: rgba(0,0,0,0);
 				margin: auto;
 			}
 		}

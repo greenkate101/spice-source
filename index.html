@@ -73,6 +73,10 @@
 			margin-left: 2%;
 			margin-right: 2%;
 		}
+		article section {
+			width: 50%;
+			float: left;
+		}
 		.top {
 			width: 50%;
 			float: left;
@@ -90,25 +94,20 @@
 			content: '';
 			clear: both;
 		}
-		.clearfix:after {
+		#row-clearfix {
+			float: none;
 			display: block;
-			clear: both;
-			font-size: 0;
-			content: '';
-			height: 0;
 		}
-		.clearfix { display: inline-block; }
-		.clearfix { display: block; }
-
 		.column {
 			float: left;
-			padding: 0 15px;
+			padding: 0px 29px;
 			background-color: #ccc;
 		}
 		.span_2 {
 			width: 15%;
 			text-align: left;
 			margin: 0;
+			height: 50s0px;
 		}
 		.border {
 			border-left: 1px solid rgba(0,0,0,0.1);
@@ -164,25 +163,42 @@
 			clear: both;
 		}
 		@media screen and (max-width: 760px) {
-			input {
-				width: 40%;
+			.image {
+				margin: auto;
 			}
-			h2 {
-				display: none;
+			article section {
+				float: none;
+				width: 100%;
 			}
-		@media screen and (max-width: 400px) {
-			#section-2, 
-			#border {
-				visibility: hidden;
+			
+		}
+		@media screen and (max-width: 500px) {
+			.image {
+				margin: auto;
 			}
-			h2 {
-				display: none;
-			}
-			nav > ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
+			#head {
 			overflow: hidden;
+			line-height: 30px;
+			}
+			#head ul {
+				vertical-align: middle;
+      			list-style-type: none;
+      			text-align: center;
+      			margin: 0;
+			}
+			#head li {
+				float: none;
+				margin: 2%;
+			}
+			#head a {
+				margin: 5%;
+			}
+			#head .logo {
+				float: none;
+			}
+			#row-clearfix {
+				display: none;
+			}
 		}
 	</style>
 </head>
@@ -216,7 +232,8 @@
 		</div>
 	</header>
 	<main>
-		<section id="section-1" class="top">
+		<article>
+		<section class="section-1" id="top">
 			<h2>Heading 2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et <a href="">dolore magna aliqua</a> Ut enim ad minim veniam,
@@ -230,7 +247,7 @@
 			</aside>
 		</section>
 		<div class="border">
-		<div class="cf section-2" id="section-2">
+		<section id="cf section-2" class="section-2">
 			<h4>Box Title</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -255,8 +272,9 @@
 				</li>
 			</ul>
 		</div>
-		</div>
-		<div id="row clearfix">
+		</section>
+		</article>
+		<div id="row-clearfix">
 			<div class="span_2 column">
 				<h3>Heading 3</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

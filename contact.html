@@ -59,17 +59,16 @@
 			width: 80%;
 			margin-left: 10%;
 		}
-		.label {
-		    display: block; 
+		input,
+		label {
+			display: block;
 		}
 		#first {
 			float: left;
-			width: 40%;
-			margin-top: 2%;
+			margin-right: 300px;
 		}
 		#last {
-			float: right;
-			margin-top: 2%;
+			float: left;
 		}
 		.clear:after {
 			display: block;
@@ -77,10 +76,8 @@
 			clear: both;
 		}
 		#email {
-			margin-top: 2%;
-			margin-bottom: 0;
 			float: left;
-			width: 40%;
+			display: block;
 		}
 		.send {
 			margin-top: 0;
@@ -145,13 +142,36 @@
 			clear: both;
 		}
 		@media screen and (max-width: 760px) {
-			input {
-				width: 40%;
+			.image {
+				margin: auto;
 			}
-		@media screen and (max-width: 480px) {
-			input {
-				width: 20%;
+			
+		}
+		@media screen and (max-width: 400px) {
+			.image {
+				margin: auto;
 			}
+			#head {
+			overflow: hidden;
+			line-height: 30px;
+			}
+			#head ul {
+				vertical-align: middle;
+      			list-style-type: none;
+      			text-align: center;
+      			margin: 0;
+			}
+			#head li {
+				float: none;
+				margin: 2%;
+			}
+			#head a {
+				margin: 5%;
+			}
+			#head .logo {
+				float: none;
+			}
+		}
 		}
 	</style>
 </head>
@@ -198,6 +218,7 @@
 				<input type="text" name="last" id="last">
 			</div>
 			</div>
+			<section>
 			<div id="email" class="clear" >
 				<label class="label" for="email">Email</label>
 				<input type="text" name="email" id="email">
@@ -213,6 +234,7 @@
 			<div id="submit" class="cf">
 				<input type="submit" name="submit">
 			</div>
+			</section>
 		</form>	
 	</main>
 	<div class="cf footer">
